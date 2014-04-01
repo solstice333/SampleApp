@@ -1,15 +1,37 @@
-<h1>SampleApp</h1>
-<p>Hello World!</p>
+<div class="center hero-unit">
+   <h1>Welcome to the Sample App</h1>
 
-<table border="1">
-   <tr>
-      <th>Header 1</th>
-      <th>Header 2</th>
-   <tr>
-      <td>row 1, cell 1</td>
-      <td>row 1, cell 2</td>
-   <tr>
-      <td>row 2, cell 1</td>
-      <td>row 2, cell 2</td>
-   <tr>
-</table>
+   <h2>
+      This is the home page for the
+      <%= link_to "Ruby on Rails Tutorial", 'http://railstutorial.org' %>
+      <!--<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>-->
+      sample application.
+   </h2>
+
+   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<div>
+   <table border="1">
+      <tr>
+         <th>Deer 1</th>
+         <th>Deer 2</th>
+      </tr>
+      <tr>
+         <td>
+          <%= link_to image_tag("deer.jpg", alt: "Rails"), 
+           'http://rubyonrails.org/' %>
+         </td>
+         <td><%= image_tag "deerKissy.jpg", alt: "deerKissy" %></td>
+      </tr>
+   </table>
+
+   <table>
+      <tr>
+         <th>Green Kitty 1</th>
+      </tr>
+      <tr>
+         <td><%= image_tag("greenKitty.jpg", alt: "greenKitty") %></td>
+      </tr>
+   </table>
+</div>
